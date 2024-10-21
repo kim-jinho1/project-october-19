@@ -18,7 +18,7 @@
             "bindings": [
                 {
                     "name": "3D Vector",
-                    "id": "f1a6e95e-0827-497c-840d-0d69dccc2b26",
+                    "id": "7f8e0a50-423f-4775-86fa-fc576e488801",
                     "path": "3DVector",
                     "interactions": "",
                     "processors": "",
@@ -29,8 +29,8 @@
                 },
                 {
                     "name": "up",
-                    "id": "6226ae9a-87aa-454b-b29d-66f86460045d",
-                    "path": "",
+                    "id": "170b798a-f731-4cc3-813b-9d557ed77180",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "0b6afb9b-0b4a-4e8b-9a1d-c449841cf16f",
+                    "id": "cd9b77b2-474c-4ea0-aa3f-1ba9844531a7",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "2e909960-3e10-4405-ac15-908e0d68e08d",
+                    "id": "50ab6443-3725-49bd-8d0f-691c20c2df2e",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -62,7 +62,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "48a995da-29ff-489e-87d5-b931cabf2a2c",
+                    "id": "50c01103-bd26-4f46-b6f4-f30f6969291e",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -73,8 +73,8 @@
                 },
                 {
                     "name": "forward",
-                    "id": "9ec43930-3a89-440b-bcdb-7ca562e76014",
-                    "path": "<Keyboard>/w",
+                    "id": "1048f8f8-35df-4ded-877c-a304d20cd939",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -84,7 +84,7 @@
                 },
                 {
                     "name": "backward",
-                    "id": "ba93b758-0ca5-44d5-8110-e789f6c825c1",
+                    "id": "e5849730-c698-4ca0-9e5c-3407c4b4539a",
                     "path": "",
                     "interactions": "",
                     "processors": "",
