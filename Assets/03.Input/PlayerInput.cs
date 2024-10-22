@@ -31,7 +31,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""name"": ""W"",
                     ""type"": ""Value"",
                     ""id"": ""2801ddd2-ce03-43ec-9c44-90065215d5a2"",
-                    ""expectedControlType"": ""Vector3"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -39,9 +39,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""3D Vector"",
-                    ""id"": ""7f8e0a50-423f-4775-86fa-fc576e488801"",
-                    ""path"": ""3DVector"",
+                    ""name"": ""2D Vector"",
+                    ""id"": ""297f6776-d7e2-44bc-bb78-50150d7d0620"",
+                    ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -51,7 +51,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""170b798a-f731-4cc3-813b-9d557ed77180"",
+                    ""id"": ""ed0b5282-7f3d-40cd-828f-9305aa8de780"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -62,7 +62,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""cd9b77b2-474c-4ea0-aa3f-1ba9844531a7"",
+                    ""id"": ""e343f15a-490f-4366-b496-2a9533f84667"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -73,7 +73,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""50ab6443-3725-49bd-8d0f-691c20c2df2e"",
+                    ""id"": ""8f9a3bfd-a363-4415-bbfe-76f114f3b689"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -84,29 +84,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""50c01103-bd26-4f46-b6f4-f30f6969291e"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""W"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""forward"",
-                    ""id"": ""1048f8f8-35df-4ded-877c-a304d20cd939"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""W"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""backward"",
-                    ""id"": ""e5849730-c698-4ca0-9e5c-3407c4b4539a"",
+                    ""id"": ""25b5002c-0b71-4732-8605-2f1369b3b761"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
