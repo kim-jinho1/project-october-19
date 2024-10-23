@@ -9,7 +9,7 @@
                     "name": "W",
                     "type": "Value",
                     "id": "2801ddd2-ce03-43ec-9c44-90065215d5a2",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -17,9 +17,9 @@
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
-                    "id": "297f6776-d7e2-44bc-bb78-50150d7d0620",
-                    "path": "2DVector",
+                    "name": "3D Vector",
+                    "id": "16a56cdb-c59b-4ce6-9ca9-11cbd10896e5",
+                    "path": "3DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -29,7 +29,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "ed0b5282-7f3d-40cd-828f-9305aa8de780",
+                    "id": "8a5a5e2a-6bf8-4fe6-a4ee-ea1981abd8e3",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "e343f15a-490f-4366-b496-2a9533f84667",
+                    "id": "6bc34587-79fe-4591-9530-30f97ac44716",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "8f9a3bfd-a363-4415-bbfe-76f114f3b689",
+                    "id": "9b3b5693-9ee7-4436-a825-94c317e4364e",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -62,7 +62,29 @@
                 },
                 {
                     "name": "right",
-                    "id": "25b5002c-0b71-4732-8605-2f1369b3b761",
+                    "id": "f91110e5-159f-4ddb-a462-5d1484426fc1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "W",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "forward",
+                    "id": "e1af717c-eec5-40eb-997e-c00989068d53",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "W",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "backward",
+                    "id": "88f2d1bc-580a-4abd-ab64-f36955045f53",
                     "path": "",
                     "interactions": "",
                     "processors": "",

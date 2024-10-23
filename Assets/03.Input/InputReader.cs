@@ -34,7 +34,7 @@ public class InputReader : ScriptableObject,PlayerInput.IWActions
 
     public void OnW(InputAction.CallbackContext context)
     {
-        inputVector = context.ReadValue<vecter2>();
+        inputVector = context.ReadValue<Vector3>();
         OnMove?.Invoke(inputVector);
     }
 }
