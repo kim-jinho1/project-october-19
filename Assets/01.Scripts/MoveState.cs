@@ -12,6 +12,7 @@ public class MoveState : State
    private void Awake()
    {
       moveData = GetComponentInParent<MoveData>();
+      PlayerMove();
    }
 
    protected override void EnterState()

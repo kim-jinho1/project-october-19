@@ -29,6 +29,5 @@ public class IdleState : State
       {
          _agent.TransitionState(moveState);
       }
-
    }
 }
