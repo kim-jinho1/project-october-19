@@ -15,7 +15,9 @@ using UnityEngine.Playables;
 public class InputReader : ScriptableObject,PlayerInput.IWActions
 
 {
-    public event Action<Vector3> OnMove;                      
+    public event Action<Vector3> OnMove;
+
+    public event Action OnKey;
 
     private PlayerInput _playerInputAction;
 
@@ -36,5 +38,11 @@ public class InputReader : ScriptableObject,PlayerInput.IWActions
     {
         inputVector = context.ReadValue<Vector3>();
         OnMove?.Invoke(inputVector);
+    }
+
+    public void OnW2(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            OnKey?.Invoke();
     }
 }

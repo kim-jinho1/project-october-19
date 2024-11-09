@@ -35,6 +35,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""W2"",
+                    ""type"": ""Button"",
+                    ""id"": ""a792ea4b-2882-4f8d-ad6d-2b460af6779d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -114,6 +123,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""W"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1fbe8ac-acb7-4c49-8548-93475123c3de"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""W2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -123,6 +143,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         // W
         m_W = asset.FindActionMap("W", throwIfNotFound: true);
         m_W_W = m_W.FindAction("W", throwIfNotFound: true);
+        m_W_W2 = m_W.FindAction("W2", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -185,11 +206,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_W;
     private List<IWActions> m_WActionsCallbackInterfaces = new List<IWActions>();
     private readonly InputAction m_W_W;
+    private readonly InputAction m_W_W2;
     public struct WActions
     {
         private @PlayerInput m_Wrapper;
         public WActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @W => m_Wrapper.m_W_W;
+        public InputAction @W2 => m_Wrapper.m_W_W2;
         public InputActionMap Get() { return m_Wrapper.m_W; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -202,6 +225,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @W.started += instance.OnW;
             @W.performed += instance.OnW;
             @W.canceled += instance.OnW;
+            @W2.started += instance.OnW2;
+            @W2.performed += instance.OnW2;
+            @W2.canceled += instance.OnW2;
         }
 
         private void UnregisterCallbacks(IWActions instance)
@@ -209,6 +235,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @W.started -= instance.OnW;
             @W.performed -= instance.OnW;
             @W.canceled -= instance.OnW;
+            @W2.started -= instance.OnW2;
+            @W2.performed -= instance.OnW2;
+            @W2.canceled -= instance.OnW2;
         }
 
         public void RemoveCallbacks(IWActions instance)
@@ -229,5 +258,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     public interface IWActions
     {
         void OnW(InputAction.CallbackContext context);
+        void OnW2(InputAction.CallbackContext context);
     }
 }
