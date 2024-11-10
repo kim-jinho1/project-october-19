@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [field:SerializeField] public InputReader inputReader { get; private set; }
+    [field:SerializeField] public InputReader InputReader { get;  set; }
     
     public CharacterController CharacterController  { get; private set; }
-
+    
+    public GameManager GameManager { get; private set; }
 
     [SerializeField] private State currentState,previousState;
     [SerializeField] private State startState;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     public string StateName="";
     private void Awake()
     {
+        GameManager = GetComponent<GameManager>();
         CharacterController = GetComponent<CharacterController>();
         State[] states = GetComponentsInChildren<State>();
         foreach (State state in states)

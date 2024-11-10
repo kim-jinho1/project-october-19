@@ -12,10 +12,15 @@ public class IdleState : State
 
       Debug.Log("Enter IdleState");
       
-      if (_agent.inputReader.inputVector.magnitude!=0)
+      if (_agent.InputReader.inputVector.magnitude!=0)
       {
          _agent.TransitionState(moveState);
       }
+   }
+
+   protected override void EndScene()
+   {
+      base.EndScene();
    }
 
    protected override void ExitState()

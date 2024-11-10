@@ -15,6 +15,11 @@ public class MoveState : State
       PlayerMove();
    }
 
+   protected override void EndScene()
+   {
+      base.EndScene();
+   }
+
    protected override void EnterState()
    {
       base.EnterState();

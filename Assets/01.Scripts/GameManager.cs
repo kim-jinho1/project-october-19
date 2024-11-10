@@ -10,13 +10,13 @@ public class GameManager : MonoBehaviour
    {
       NextScene();
    }
-   
-   private void NextScene()
+
+   public void NextScene()
    {
       SceneManager.LoadScene("02.GameScene", LoadSceneMode.Additive);
    }
 
-   private void EndScene()
+   public void EndScene()
    {
       SceneManager.LoadScene("03.EndScene", LoadSceneMode.Additive);
 

@@ -17,7 +17,7 @@ public abstract class State : MonoBehaviour
 
     public void Exit()
     {
-        _agent.inputReader.OnMove -= Move;
+        _agent.InputReader.OnMove -= Move;
         OnExit?.Invoke();
         ExitState();
     }
@@ -29,11 +29,17 @@ public abstract class State : MonoBehaviour
 
     public void Enter()
     {
-        _agent.inputReader.OnMove += Move;
+        _agent.InputReader.OnKey +=EndScene;
+        _agent.InputReader.OnMove += Move;
         OnEnter?.Invoke();
         EnterState();
     }
 
+    protected virtual void EndScene()
+    {
+        _agent.GameManager.EndScene();
+    }
+    
     protected virtual void EnterState()
     {
         

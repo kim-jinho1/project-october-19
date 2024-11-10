@@ -1,15 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-using static InputReader;
-using UnityEngine.InputSystem;
-using UnityEngine.Playables;
 
 [CreateAssetMenu(menuName = "SO/InputReader")]
 public class InputReader : ScriptableObject,PlayerInput.IWActions
